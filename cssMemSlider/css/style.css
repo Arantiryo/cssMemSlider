@@ -122,9 +122,23 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
+/* TODO create pull request and submit task */
+
+@media screen and (max-width: 768px) {
   #slides {
-     max-width: calc(100% - 140px);
-     margin: 0 auto;
+     height: 60%;
+  }
+  #bullets {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  #slide1:checked ~ #slides .slide_1::before,
+  #slide2:checked ~ #slides .slide_2::before,
+  #slide3:checked ~ #slides .slide_3::before,
+  #slide4:checked ~ #slides .slide_4::before {
+    bottom: -120px;
+    font-size: 12px;
+    white-space: pre-wrap;
   }
 }
