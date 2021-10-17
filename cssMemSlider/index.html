@@ -4,9 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Meme Slider</title>
 </head>
 <body>
-  
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_1" data-text="Wish my company had QA engineers">
+                <div class="slide-content">
+                   <img src="img/1.jpg" alt="programming meme">
+                </div>
+             </div>
+             <div class="slide slide_2" data-text="What is code review?">
+                <div class="slide-content">
+                  <img src="img/2.jpg" alt="programming meme">
+                </div>
+             </div>
+             <div class="slide slide_3" data-text="Story of my life">
+                <div class="slide-content">
+                  <img src="img/3.jpg" alt="programming meme">
+                </div>
+             </div>
+             <div class="slide slide_4" data-text="This is me when making this task">
+                <div class="slide-content">
+                  <img src="img/4.png" alt="programming meme">
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+ </div>
 </body>
 </html>
